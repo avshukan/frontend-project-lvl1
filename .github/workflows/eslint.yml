@@ -1,8 +1,0 @@
-name: eslint-starter
-on: push
-jobs:
-  eslint-job:
-    runs-on: ubuntu-latest
-    steps:
-      - name: eslint-step
-        run: make lint
