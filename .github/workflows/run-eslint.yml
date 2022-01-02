@@ -4,7 +4,7 @@ jobs:
   eslint:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout repo
         uses: actions/checkout@v2
       - name: eslint-step
-        run: make lint
+        run: npm ci
+      - run: make lint
