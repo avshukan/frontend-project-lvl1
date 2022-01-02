@@ -7,4 +7,5 @@ jobs:
       - name: check
         uses: actions/checkout@v2
       - name: eslint-step
-        run: make lint
+        run: npm ci
+      - run: make lint
