@@ -1,0 +1,11 @@
+name: run-eslint
+on: push
+jobs:
+  eslint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check
+        uses: actions/checkout@v2
+      - name: eslint-step
+        run: npm ci
+      - run: make lint
