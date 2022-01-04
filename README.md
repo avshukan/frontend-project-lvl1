@@ -14,7 +14,39 @@ $ make install
 $ npm link
 ```
 
-## Demonstration
+## Rules
 
-## Brain-even
+### Brain-even
+Run ```brain-even```. Type 'yes' if the number is even, otherwise answer 'no'.
+
+**Demonstration**:
+
 [![asciicast](https://asciinema.org/a/459728.svg)](https://asciinema.org/a/459728)
+
+### Brain-calc
+Run ```brain-calc```. Calculate and type right number.
+
+**Demonstration**:
+
+[![asciicast](https://asciinema.org/a/459770.svg)](https://asciinema.org/a/459770)
+
+### Brain-progression
+Run ```brain-progression```. Calculate and type missed element of progression.
+
+**Demonstration**:
+
+[![Brain-progression](https://asciinema.org/a/459774.svg)](https://asciinema.org/a/459774)
+
+### Brain-gcd
+Run ```brain-even```. Calculate and type gcd of two numbers.
+
+**Demonstration**:
+
+[![asciicast](https://asciinema.org/a/459792.svg)](https://asciinema.org/a/459792)
+
+### Brain-prime
+Run ```brain-prime```. Type 'yes' if the number is prime, otherwise answer 'no'.
+
+**Demonstration**:
+
+[![asciicast](https://asciinema.org/a/459790.svg)](https://asciinema.org/a/459790)
