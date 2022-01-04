@@ -5,7 +5,6 @@ const gcd = (a, b) => {
     return a;
   }
   const [max, min] = (a > b) ? [a, b] : [b, a];
-  const x;
   if (max % min === 0) {
     return min;
   }

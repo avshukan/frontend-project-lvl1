@@ -6,3 +6,11 @@
 
 ### Eslint
 ![run-eslint](https://github.com/avshukan/frontend-project-lvl1/actions/workflows/run-eslint.yml/badge.svg)
+
+$ git clone https://github.com/avshukan/frontend-project-lvl1.git
+$ cd frontend-project-lvl1/
+$ make install
+$ npm link
+
+
+[![asciicast](https://asciinema.org/a/459728.svg)](https://asciinema.org/a/459728)

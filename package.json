@@ -1,14 +1,15 @@
 {
   "name": "@hexlet/code",
   "type": "module",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "description": "hexlet frontend project 1",
   "main": "index.js",
   "bin": {
     "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js",
     "brain-calc": "bin/brain-calc.js",
-    "brain-calc": "bin/brain-gcd.js"
+    "brain-gcd": "bin/brain-gcd.js",
+    "brain-progression": "bin/brain-progression.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

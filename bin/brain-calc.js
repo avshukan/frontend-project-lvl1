@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import even from '../src/calc.js';
+import calc from '../src/calc.js';
 
-even();
+calc();
