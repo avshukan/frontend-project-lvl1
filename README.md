@@ -1,10 +1,10 @@
 ## Badges
 
-### Hexlet tests status: [![Actions Status](https://github.com/avshukan/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/avshukan/frontend-project-lvl1/actions)
+### Actions status: 
+[![hexlet-check](https://github.com/avshukan/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/avshukan/frontend-project-lvl1/actions)
+[![run-eslint](https://github.com/avshukan/frontend-project-lvl1/actions/workflows/run-eslint/badge.svg)](https://github.com/avshukan/frontend-project-lvl1/actions)
 
 ### CodeClimate Maintainability status: [![Maintainability](https://api.codeclimate.com/v1/badges/f9eb3fdeae84a46820ae/maintainability)](https://codeclimate.com/github/avshukan/frontend-project-lvl1/maintainability)
-
-### Eslint status: ![run-eslint](https://github.com/avshukan/frontend-project-lvl1/actions/workflows/run-eslint.yml/badge.svg)
 
 ## Installation
 ```
