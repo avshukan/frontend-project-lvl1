@@ -1,10 +1,13 @@
-import game from './game.js';
+import game, { challengesCount } from '../src/index.js';
+import random from '../src/random.js';
+
+const maxValue = 10000;
 
 const isPrime = (n) => {
   if (n === 1) {
     return false;
   }
-  for (let i = 2; i < Math.sqrt(n); i += 1) {
+  for (let i = 2; i <= Math.sqrt(n); i += 1) {
     if (n % i === 0) {
       return false;
     }
@@ -15,14 +18,11 @@ const isPrime = (n) => {
 const generator = (count) => {
   const result = [];
   for (let i = 0; i < count; i += 1) {
-    const question = Math.floor(Math.random() * 100) + 1;
+    const question = random(maxValue);
     const correctAnswer = isPrime(question) ? 'yes' : 'no';
     result.push({ question, correctAnswer });
   }
   return result;
 };
 
-export default () => {
-  const challenges = generator(3);
-  game(challenges);
-};
+export default () => game(generator(challengesCount));

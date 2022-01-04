@@ -1,4 +1,7 @@
-import game from './game.js';
+import game, { challengesCount } from '../src/index.js';
+import random from '../src/random.js';
+
+const maxValue = 100;
 
 const gcd = (a, b) => {
   if (a === b) {
@@ -14,8 +17,8 @@ const gcd = (a, b) => {
 const generator = (count) => {
   const result = [];
   for (let i = 0; i < count; i += 1) {
-    const a = Math.floor(Math.random() * 100) + 1;
-    const b = Math.floor(Math.random() * 100) + 1;
+    const a = random(maxValue);
+    const b = random(maxValue);
     const question = `${a} ${b}`;
     const correctAnswer = (gcd(a, b)).toString();
     result.push({ question, correctAnswer });
@@ -23,7 +26,4 @@ const generator = (count) => {
   return result;
 };
 
-export default () => {
-  const challenges = generator(3);
-  game(challenges);
-};
+export default () => game(generator(challengesCount));
