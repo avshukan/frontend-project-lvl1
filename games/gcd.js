@@ -2,6 +2,7 @@ import game, { challengesCount } from '../src/index.js';
 import random from '../src/random.js';
 
 const maxValue = 100;
+const description = 'Find the greatest common divisor of given numbers.';
 
 const gcd = (a, b) => {
   if (a === b) {
@@ -26,4 +27,4 @@ const generator = (count) => {
   return result;
 };
 
-export default () => game(generator(challengesCount));
+export default () => game(description, generator(challengesCount));

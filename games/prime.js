@@ -1,6 +1,7 @@
 import game, { challengesCount } from '../src/index.js';
 import random from '../src/random.js';
 
+const description = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
 const maxValue = 10000;
 
 const isPrime = (n) => {
@@ -25,4 +26,4 @@ const generator = (count) => {
   return result;
 };
 
-export default () => game(generator(challengesCount));
+export default () => game(description, generator(challengesCount));

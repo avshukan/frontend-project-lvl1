@@ -1,6 +1,7 @@
 import game, { challengesCount } from '../src/index.js';
 import random from '../src/random.js';
 
+const description = 'What is the result of the expression?';
 const operators = ['+', '-', '*'];
 const maxValue = 100;
 
@@ -29,4 +30,4 @@ const generator = (count) => {
   return result;
 };
 
-export default () => game(generator(challengesCount));
+export default () => game(description, generator(challengesCount));

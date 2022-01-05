@@ -1,6 +1,7 @@
 import game, { challengesCount } from '../src/index.js';
 import random from '../src/random.js';
 
+const description = 'What number is missing in this progression?';
 const maxLength = 15;
 const minLength = 5;
 const maxStart = 100;
@@ -23,4 +24,4 @@ const generator = (count) => {
   return result;
 };
 
-export default () => game(generator(challengesCount));
+export default () => game(description, generator(challengesCount));
