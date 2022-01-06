@@ -1,12 +1,9 @@
 const gcd = (a, b) => {
-  if (a === b) {
-    return a;
+  let [max, min] = (a > b) ? [a, b] : [b, a];
+  while (max % min > 0) {
+    [max, min] = [min, max % min];
   }
-  const [max, min] = (a > b) ? [a, b] : [b, a];
-  if (max % min === 0) {
-    return min;
-  }
-  return gcd(min, max % min);
+  return min;
 };
 
 export default gcd;
