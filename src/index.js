@@ -1,9 +1,8 @@
 import readlineSync from 'readline-sync';
-import greetings from './games/greetings.js';
 
-const maxPoints = 3;
+export const roundsCount = 3;
 
-const task = ({ question, correctAnswer }) => {
+const task = ([question, correctAnswer]) => {
   console.log(`Question: ${question}`);
   const answer = readlineSync.question('Your answer: ');
   const result = correctAnswer === answer;
@@ -15,11 +14,13 @@ const task = ({ question, correctAnswer }) => {
   return result;
 };
 
-export default (description, generator) => {
-  const name = greetings();
+export default (description, rounds) => {
+  console.log('Welcome to the Brain Games!');
+  const name = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${name}!`);
   console.log(description);
-  for (let pointsCounter = 0; pointsCounter < maxPoints; pointsCounter += 1) {
-    if (!task(generator())) {
+  for (let roundsCounter = 0; roundsCounter < roundsCount; roundsCounter += 1) {
+    if (!task(rounds[roundsCounter])) {
       console.log(`Let's try again, ${name}!`);
       return;
     }
